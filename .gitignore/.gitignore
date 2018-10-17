@@ -1,0 +1,108 @@
+/**
+ * Student name:Shane 
+ * 
+ */
+import java.util.*;
+public class Assignment1_2016 {
+	   //=====================================
+  	//Code for Question 1
+
+public class Car{
+	private String make;
+	private String reg;
+	private double price;
+	private int distance;
+
+	public Car(String m, String r, double p, int d)
+	{
+		make = m; reg = r;
+		price = p; distance = d;
+	}
+	public double price(){
+		return price;
+	}
+	public void display(){
+	 System.out.println("Make: "+make);
+	 System.out.println("Reg: "+reg);
+	 System.out.println("Price: "+price);
+	 System.out.println("Distance: "+distance);
+	}
+
+}
+
+public class CarTest {
+	public static void main(String[] args) {
+
+		Car c1 = new Car("Mistubishi","02D11263",923.00,640);
+		Car c2 = new Car("Ford","05D1658",812.56,260);
+		c1.display();
+		c2.display();
+		System.out.printf("Total cost: %.2f",c1.price()+c2.price());
+
+
+
+	}
+}
+  	
+  	//=======================================
+  	//Code for Question 2
+		
+public class Car{
+	private String make;
+	private String reg;
+	private double price;
+	private int distance;
+	private boolean b;
+
+	public Car(String m, String r, double p, int d)
+	{
+		make = m; reg = r;
+		price = p; distance = d;
+	}
+	public double price(){
+		return price;
+	}
+	public void display(){
+	 System.out.println("Make: "+make);
+	 System.out.println("Reg: "+reg);
+	 System.out.println("Price: "+price);
+	 System.out.println("Distance: "+distance);
+	}
+	public void not(){
+		if(b== !true){
+			b=false;
+		}
+		else if(b==!false){
+			b=true;
+		}
+	}
+	public void state(){
+		if(b==b){
+			System.out.print(b);
+		}
+	}
+	public void set(){
+		if(b==false){
+			b=true;
+			else if(b==true){
+				b=true;
+			}
+		}
+	}
+	public void negate(){
+		if(b==tue){
+			b=false;
+			else if(b==false){
+				b=false;
+			}
+		}
+	}
+
+}
+  	
+  	
+  	//=======================================
+
+
+  
+}
